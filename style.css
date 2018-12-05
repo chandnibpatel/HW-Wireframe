@@ -1,82 +1,77 @@
+
+/* Common Body styles includes font type, size, color, background, width and margin*/
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    color: #777;
-    background: #777;
-    width: 960px;
-    font-size: 18px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 18px;
+   color: #777;
+   background: #777;
+   width: 960px;
+   margin-left: 10%;
 }
-
-header{
-    text-align: center;
-    height: 10px;
-    margin: 0.5%;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding: 1em;
-}
-nav{
-    text-align: center;
-    height: 10px;
-    margin: 0.5%;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding: 1em;
-}
-
+/* common backgrund color for header, nav, section, aside and footer */
 header,nav,section,aside,footer{
- background: #ebebeb;
-}
-article{
-    color: #ebebeb;
-    background: #777;
-    padding: 1em;
-    text-align: center;
-    background-color: #777;  
-}
-h1,p{
-    color: #777;
     background: #ebebeb;
-    height: 10px;
-    padding: 1em;
-    margin: 5px;
-}
-section{
-    display: inline-block;
-    text-align: center;
-    padding: 5px;
-    margin: 24px;
-    width: 45%;
-    overflow: auto;
-    height: 250px;
-    vertical-align: top;
-}
-.main-div{
-    margin-left: 28px;
-    margin-right: 28px;
-   
-}
-.section1{
-    text-align: top;
-    margin-right: 7px;
-    padding-block-start: 10px;
-    margin-block-end: 5px;
-    display: inline-block;
-}
-.section2{
-    display: inline-block;
-    padding-block-start: 10px;
-    margin-left: 10px;
- }
- .section3{
-     padding: 0px;
-          height: 30px;
     
 }
-footer{
+/* setting padding, width, margin bottom & left and Text alignment for header*/
+header{
+    padding:25px; 
+    width: 90%;
+    margin-bottom: 10px;
+    margin-left: 10px; /* to add margin at left*/
     text-align: center;
-    padding: 1em;
-    margin: 0.5%;
-    margin-left: 50px;
-    margin-right: 50px;
-    height: 10px;
+}
+/* Setting padding, width, margin bottom & left and Text alignment for nav */
+nav{
+    padding:25px;
+    margin-left: 10px;  
+    width: 90%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+/* set the width to 100% of box (parent class of box 1 and 2) inorder to float box1 and box2 inside */
+.box{
+    width: 100%;
+}
+/* box1 styling */
+.box1{
+    float:left; /* box1 will float left around the parent Box */
+    width: 50%; /* setting the width to 50% of the parent box */
+    padding: 25px;
+    height: 225px;
+    margin-left: 10px;  
+    margin-bottom: 20px;
+    text-align: center; 
+}
+/* box2 styling */
+.box2{
+    float:left; /* box2 will float left around the parent box1 */
+    width: 32.5%; /* setting the width to 32% approx of the parent box */
+    margin-left: 20px;
+    padding: 25px;
+    height: 225px; 
+    margin-bottom: 20px;
+    text-align: center;
+}
+/* article styling : color, backround and padding*/
+.article{
+    color: #ebebeb;
+    background: #777;
+    padding: 25px;
+}
+/* h1 and P styling : color, backround and padding*/
+.h1,p{
+    color: #777;
+    background: #ebebeb;
+    padding: 10px;
+}
+/* setting padding, width, margin bottom & left and Text alignment for header*/
+footer{
+    clear: both; /* need to clear the float inorder to stop footer to float around the previous box2*/
+    display: block; /*will display in block pattern */
+    content: ""; /* will clear the contets*/
+    padding:25px;
+    margin-left: 10px;  
+    width: 90%;
+    text-align: center;
 }

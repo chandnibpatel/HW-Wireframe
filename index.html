@@ -1,42 +1,46 @@
 <!doctype html>
 <html>
     <head>
-            <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="style.css">    
         <title>
             Builing Wireframe
         </title>
     </head>
     <body>
-     <header>
-         header
-     </header>
-     <nav>
-         nav
-     </nav>
-  
-     <div class ="main-div">
-        <section class = "section1">
-                <section class = "section3">
+         <!-- Header -->
+        <header>header</header>
+
+         <!-- nav -->
+        <nav>nav</nav>
+
+         <!-- Box is a parent class of Box1 and Box2 and will be used in CSS to float around each other in the Box -->
+        <div class="box">
+
+             <!-- Box 1 and is a parent class of article class -->
+            <section class="box1">
                 section
-                </section>
 
-                <article>
+                <!-- Article -->
+                <article class="article">
                     article
-                    <div>
-                            <h1>h1,h2,h3</h1>
-                    </div>
 
-                    <div>
-                        <p>p</p>
-                    </div>
-                    
-                </article>
-        </section>
-       
-        <section class="section2">
-            <aside>aside</aside>
-        </section>
-     </div>
-    <footer>footer</footer>
+                    <!-- h1 Class: Inside article class  -->
+                    <h1 class ="h1">h1,h2,h3</h1>
+
+                    <!-- para -->
+                    <p>p</p>
+
+                 </article> 
+            </section>
+
+            <!-- Box 2 -->
+            <aside class="box2">
+                aside
+            </aside>
+
+        </div>
+
+        <!-- footer -->
+        <footer>footer</footer>
     </body>
 </html>
